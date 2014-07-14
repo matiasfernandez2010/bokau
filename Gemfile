@@ -17,6 +17,13 @@ gem 'spring', group: :development
 gem 'rails_12factor', group: :production
 
 group :development, :test do 
+	gem 'guard'
+	gem 'guard-livereload'
+	gem 'guard-rspec'
+	gem 'capybara'
+	gem 'factory_girl_rails'
+	gem 'database_cleaner'
+	gem 'shoulda-matchers'
 	gem 'rspec-rails'
 	gem 'spring-commands-rspec'
 	gem 'rb-fsevent' if 'uname' =~/Darwin/
@@ -24,7 +31,6 @@ end
 
 group :test do 
 	gem 'selenium-webdriver'
-	gem 'capybara'
 end
 
 
