@@ -13,9 +13,10 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc, require: false
-gem 'spring', group: :development
-gem 'rails_12factor', group: :production
+gem 'sinatra', require: false
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'spring'
+gem 'rails_12factor'
 
 group :development, :test do 
 	gem 'guard'
@@ -27,7 +28,7 @@ group :development, :test do
 	gem 'shoulda-matchers'
 	gem 'rspec-rails'
 	gem 'spring-commands-rspec'
-	gem 'rb-fsevent' if 'uname' =~/Darwin/
+	gem 'rb-fsevent' 
 end
 
 group :test do 
