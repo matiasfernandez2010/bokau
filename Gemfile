@@ -27,7 +27,7 @@ group :development, :test do
 	gem 'factory_girl_rails'
 	gem 'database_cleaner'
 	gem 'shoulda-matchers'
-	gem 'rspec-rails'
+	gem 'rspec-rails', '~> 3.0.0'
 	gem 'spring-commands-rspec'
 	gem 'rb-fsevent' 
 end
