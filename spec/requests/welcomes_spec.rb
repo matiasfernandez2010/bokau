@@ -6,5 +6,4 @@ RSpec.describe "Home page", :type => :request do
 
 	it { should have_selector('h1', text: 'bokau') }
 	it { should have_title("bokau | Gourmet delivery, FAST.") }
-
 end
