@@ -30,6 +30,9 @@ GEM
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
+    bootstrap-form (3.0.0)
+      actionpack (> 3.2)
+      railties (> 3.2)
     bootstrap-sass (3.2.0.0)
       sass (~> 3.2)
     builder (3.2.2)
@@ -86,8 +89,8 @@ GEM
       netrc (~> 0.7.7)
       rest-client (~> 1.6.1)
       rubyzip
-    heroku-api (0.3.18)
-      excon (~> 0.27)
+    heroku-api (0.3.19)
+      excon (~> 0.38)
       multi_json (~> 1.8)
     hike (1.2.3)
     http_parser.rb (0.6.0)
@@ -243,6 +246,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt
+  bootstrap-form
   bootstrap-sass
   capybara
   coffee-rails (~> 4.0.0)

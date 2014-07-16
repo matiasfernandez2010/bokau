@@ -8,6 +8,7 @@ gem 'unicorn-rails'
 gem 'bcrypt'
 gem 'sprockets'
 gem 'bootstrap-sass'
+gem 'bootstrap-form'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -24,7 +25,6 @@ group :development, :test do
 	gem 'guard-livereload'
 	gem 'guard-rspec'
 	gem 'capybara'
-	gem 'factory_girl_rails'
 	gem 'database_cleaner'
 	gem 'shoulda-matchers'
 	gem 'rspec-rails', '~> 3.0.0'
@@ -34,6 +34,7 @@ end
 
 group :test do 
 	gem 'selenium-webdriver'
+	gem 'factory_girl_rails'
 end
 
 
