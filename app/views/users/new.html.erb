@@ -1,17 +1,33 @@
 <% provide(:title, 'Sign Up') %>
-<h1>Sign Up</h1>
-
-<%= bootstrap_form_for(@user) do |f| %>
-
-  <%= f.text_field :name %>
-
-  <%= f.phone_field :phone %>
-
-  <%= f.email_field :email %>
-
-  <%= f.password_field :password %>
-
-  <%= f.password_field :password_confirmation, label: "Confirm Password" %>
-
-  <%= f.submit "Create account", class: "btn btn-primary btn-lg" %>
-<% end %>
+<div class="container">
+  <div class="col-sm-2 col-md-3"></div>
+  <div class="row col-sm-8 col-md-6">
+    <h1 class="col-xs-12">Sign Up</h1>
+    <%= form_for(@user) do |f| %>
+      <div class="form-group col-xs-12">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control", placeholder: "Enter full name" %>
+      </div>
+      <div class="form-group col-xs-12">
+        <%= f.label :phone %>
+        <%= f.text_field :phone, class: "form-control", placeholder: "(787)-123-4567" %>
+      </div>
+      <div class="form-group col-xs-12">
+        <%= f.label :email %>
+        <%= f.text_field :email, class: "form-control", placeholder: "Enter your email" %>
+      </div>
+      <div class="form-group col-xs-12">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: "form-control", placeholder: "Enter password" %>
+      </div>
+      <div class="form-group col-xs-12">
+        <%= f.label :password_confirmation, "Confirm Password" %>
+        <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Re-enter password" %>
+      </div>
+      <div class="form-group col-xs-12 text-center">
+        <%= f.submit "Create account", class: "btn btn-primary btn-lg" %>
+      </div>
+    <% end %>
+  </div>
+  <div class="col-sm-2 col-md-3"></div>
+</div>
