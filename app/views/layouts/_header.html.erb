@@ -18,13 +18,7 @@
           <li><%= link_to("How It Works", '#') %></li>
           <li><%= link_to("About Us", '#') %></li>
           <li><%= link_to("Delivery Map", '#') %></li>
-          <li>
-            <% if @user.name.empty? %>
-              <%= link_to("Login/Register", '#') %>
-            <% else %>
-              <%= link_to(@user.name, '#') %>
-            <% end %>
-          </li>
+          <li><%= link_to("Login/Register", signup_path) %></li>
         </ul>
       </div> <!-- /.navbar-collapse -->
     </div> <!-- /.container-fluid -->
