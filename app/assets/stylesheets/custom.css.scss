@@ -109,6 +109,20 @@ footer {
   }
 }
 
+/* forms */
+#error_explanation {
+  color: #fb4f4f;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control_group;
+  @extend .error;
+}
+
 /* miscellaneous */
 .debug_dump {
   clear: both;
