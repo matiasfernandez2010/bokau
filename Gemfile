@@ -28,6 +28,7 @@ group :development, :test do
 	gem 'database_cleaner'
 	gem 'shoulda-matchers'
 	gem 'rspec-rails', '~> 3.0.0'
+	gem 'rspec-its'
 	gem 'spring-commands-rspec'
 	gem 'rb-fsevent' 
 end
@@ -35,6 +36,7 @@ end
 group :test do 
 	gem 'selenium-webdriver'
 	gem 'factory_girl_rails'
+	gem 'cucumber-rails', :require => false
 end
 
 

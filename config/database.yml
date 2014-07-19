@@ -8,7 +8,7 @@ development:
   database: bokau_development
   host: localhost
 
-test:
+test: &test
   <<: *default
   database: bokau_test
   host: localhost
@@ -19,3 +19,6 @@ production:
   database: bokau_production
   username: bokau
   password: <%= ENV['BOKAU_DATABASE_PASSWORD'] %>
+
+cucumber:
+  <<: *test
